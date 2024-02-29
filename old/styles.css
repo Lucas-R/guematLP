@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, button, input{
+    position: relative;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper-data{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desc{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.desc span{
+    font-weight: bold;
+}
+
+.btn-buy{
+    width: 200px;
+    height: 45px;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.modal-buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    opacity: 0;
+}
+
+.modal-buy.show{
+    z-index: 999;
+    opacity: 1;
+}
+
+.wrapper-modal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.close-modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.wrapper-inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 20px;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr;
+}
+
+#input-quantity{
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    text-align: center;
+    cursor: default;
+}
+
+#input-buy{
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    text-align: center;
+    cursor: default;
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.plus, 
+.minus{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: #CCC;
+    margin: 0 auto;
+}

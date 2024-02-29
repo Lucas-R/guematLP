@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <div class="wrapper-data">
+        <h1>R$ 72,07</h1>
+        <p class="desc">Preço da caixa com <span id="meter-box">2,56</span> metros R$ <span id="price-box">184,50</span></p>
+        <button class="btn-buy">Buy</button>
+    </div>
+
+    <div class="modal-buy">
+        <div class="wrapper-modal">
+            <button class="close-modal">&#x2715</button>
+            <div class="wrapper-inputs">
+                <div class="input-group">
+                    <label for="input-quantity"> Caixas </label>
+                    <input id="input-quantity" type="text" value="0" readonly/>
+                </div>
+                <div class="input-group">
+                    <label for="input-quantity"> Valor </label>
+                    <input id="input-buy" type="text" value="0" readonly/>
+                </div>
+
+                <div class="input-group">
+                    <div></div>
+                    <div class="btn-group">
+                        <button class="plus"> + </button>
+                        <button class="minus"> - </button>
+                    </div>
+                </div>
+            </div>
+            <small>Preço da caixa com 2,56 metros R$ 184,50*</small>
+        </div>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>
